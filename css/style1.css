@@ -826,7 +826,7 @@ h4, .h4 {
 .hero-banner {
     position: relative;
     padding: 70px 0;
-    background: linear-gradient(0deg, rgba(120, 45, 169, 0.75), rgba(120, 45, 169, 0.75)),url("../img/blog/main-blog/m-blog-1.jpg") left center no-repeat;
+    background: linear  -gradient(0deg, rgba(120, 45, 169, 0.75), rgba(120, 45, 169, 0.75)),url("../img/blog/main-blog/m-blog-1.jpg") left center no-repeat;
     background-size: cover
 }
 
@@ -3132,7 +3132,6 @@ h4, .h4 {
 }
 
 .accordion a::after {
-<<<<<<< HEAD
     font-family: 'Ionicons';
     content: '\f218';
     position: absolute;
@@ -3148,22 +3147,6 @@ h4, .h4 {
     border-radius: 50%;
     border: 1px solid #7288a2;
     text-align: center;
-=======
-  font-family: 'Ionicons';
-  content: '\f218';
-  position: absolute;
-  float: right;
-  right: 1rem;
-  font-size: 1rem;
-  color: #7288a2;
-  width: 30px;
-  height: 30px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  border: 1px solid #7288a2;
-  text-align: center;
->>>>>>> 91ea1856f9d1adfda79ab2f8dd4cbdf56af0439a
 }
 
 .accordion a.active::after {
