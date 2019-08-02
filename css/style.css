@@ -1441,7 +1441,7 @@ h4, .h4 {
 }
 
 .card-priceTable {
-    background: #fff;
+    background: #3b1d82;
     border-radius: 4px;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
@@ -1465,7 +1465,12 @@ h4, .h4 {
 }
 
 .priceTable-header h3 {
-    font-size: 27px
+    font-size: 27px;
+
+}
+.priceTable-header h3 ,h2,h4,li{
+
+	color: #fff
 }
 
 .priceTable-header h1 {
@@ -1547,7 +1552,7 @@ h4, .h4 {
 }
 
 .card-priceTable:hover {
-    background: #3b1d82
+    background: #ff0066
 }
 
 .card-priceTable:hover .priceTable-header {
