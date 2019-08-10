@@ -1475,7 +1475,7 @@ h4, .h4 {
   color: black;
   transform: rotateY(180deg);
 }
-.flip-card-back h2,h3{
+.flip-card-back h4,h5,h6{
   color: black;
 }
 .card-priceTable {
