@@ -2,6 +2,41 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400');
 
+
+/* Flip Card CSS */
+
+/*
+flip card
+*/
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+}
+
+.card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+}
+  
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+}
+
+ 
 body {
     color: #797979;
     font-family: "Roboto", 'Hind', sans-serif;
