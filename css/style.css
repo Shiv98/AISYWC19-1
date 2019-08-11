@@ -1516,8 +1516,7 @@ h4, .h4 {
 }
 
 .priceTable-price {
-    font-size: 22px;
-	color : #fff
+    font-size: 22px
 }
 
 @media (min-width: 768px) {
