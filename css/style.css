@@ -2,6 +2,41 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400');
 
+
+/* Flip Card CSS */
+
+/*
+flip card
+*/
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+}
+
+.card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+}
+  
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+}
+
+ 
 body {
     color: #797979;
     font-family: "Roboto", 'Hind', sans-serif;
@@ -1439,9 +1474,47 @@ h4, .h4 {
         right: -110px
     }
 }
+.flip-card {
+  background-color: transparent;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; 
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
 
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+	color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background: #ff0066;
+  color: black;
+  transform: rotateY(180deg);
+}
+.flip-card-back h4,h5,h6{
+  color: black;
+}
 .card-priceTable {
-    background: #fff;
+    background: #3b1d82;
     border-radius: 4px;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
@@ -1465,7 +1538,12 @@ h4, .h4 {
 }
 
 .priceTable-header h3 {
-    font-size: 27px
+    font-size: 27px;
+
+}
+.priceTable-header h3 ,h2,h4,h1,li{
+
+	color: #fff
 }
 
 .priceTable-header h1 {
@@ -1547,7 +1625,7 @@ h4, .h4 {
 }
 
 .card-priceTable:hover {
-    background: #3b1d82
+    background: #ff0066
 }
 
 .card-priceTable:hover .priceTable-header {
