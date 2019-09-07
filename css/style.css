@@ -1150,7 +1150,7 @@ h4, .h4 {
     left: 0;
     width: 100%;
     text-align: center;
-    background: rgba(59, 29, 130, 0.4);
+    background: rgba(59, 29, 130, 0.6);
     padding: 22px 5px;
     z-index: 2;
     transition: all .7s ease
