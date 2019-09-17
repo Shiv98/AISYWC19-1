@@ -3262,3 +3262,20 @@ h4, .h4 {
     -o-transition: all 0.35s ease 0.15s;
     transition: all 0.35s ease 0.15s;
 }
+
+
+
+
+.table.table-striped th {
+  background-color: #3b1d82;
+  color: white;
+}
+
+.table.table-striped tr:nth-child(even) {
+background-color: rgba(102, 102, 255, 0.6);
+color: black;
+}
+.table.table-striped tr:nth-child(odd) {
+background-color: rgba(179, 179, 255, 0.6);
+color: black;
+}
