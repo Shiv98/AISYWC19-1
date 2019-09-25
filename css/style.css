@@ -1274,7 +1274,8 @@ h4, .h4 {
 
 .scheduleTab .nav-item h4 {
     font-size: 20px;
-    margin-bottom: 5px
+    margin-bottom: 5px;
+	color: black;
 }
 
 .scheduleTab .nav-item p {
